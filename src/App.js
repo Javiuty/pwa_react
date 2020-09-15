@@ -18,7 +18,6 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <label htmlFor="search"></label>
       <input
         id="search"
         type="text"
@@ -28,6 +27,7 @@ const App = () => {
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={search}
       />
+      <label htmlFor="search"></label>
 
       {weather.main && (
         <div className="city">
